@@ -1,0 +1,988 @@
+<root>
+<document scada='0' schema='103' license='1,58822297,GCPAE5' title='18877 ICSP test' description='' fcversion='655618' target='PIC.16F.16F18877' >
+	<config data='!0,17fa!10,253f!20,792!30,fff!40,3fff%0,2%4,7%8,1%b,0%d,0%10,1%11,1%15,1%16,0%19,0%1a,1%1b,0%1c,0%1d,1%20,12%25,0%28,7%2b,0%30,3%3c,0%3d,0%40,1%41,1' clkspd='20000000' simspd='0' usewdt='0' constif='0' Use3V3='0' />
+	<plugins >
+		<dll_models enabled='1' />
+	</plugins>
+	<supplement use='0' head='' body='' />
+	<debug />
+	<traces />
+	<ghost >
+		<FK2 >
+			<data name='FK2D0' port='4294967295' pin='4294967295' />
+			<data name='FK2D1' port='4294967295' pin='4294967295' />
+			<data name='FK2D2' port='4294967295' pin='4294967295' />
+			<data name='FK2D3' port='4294967295' pin='4294967295' />
+			<data name='FK2D4' port='4294967295' pin='4294967295' />
+			<data name='FK2D5' port='4294967295' pin='4294967295' />
+			<data name='FK2D6' port='4294967295' pin='4294967295' />
+			<data name='FK2D7' port='4294967295' pin='4294967295' />
+			<data name='FK2D8' port='4294967295' pin='4294967295' />
+			<data name='FK2D9' port='4294967295' pin='4294967295' />
+			<data name='FK2D10' port='4294967295' pin='4294967295' />
+			<data name='FK2D11' port='4294967295' pin='4294967295' />
+			<data name='FK2D12' port='4294967295' pin='4294967295' />
+			<data name='FK2D13' port='4294967295' pin='4294967295' />
+			<data name='FK2D14' port='4294967295' pin='4294967295' />
+			<data name='FK2D15' port='4294967295' pin='4294967295' />
+			<data name='FK2A0' port='4294967295' pin='4294967295' />
+			<data name='FK2A1' port='4294967295' pin='4294967295' />
+			<data name='FK2A2' port='4294967295' pin='4294967295' />
+			<data name='FK2A3' port='4294967295' pin='4294967295' />
+			<data name='FK2A4' port='4294967295' pin='4294967295' />
+			<data name='FK2A5' port='4294967295' pin='4294967295' />
+		</FK2>
+		<ICD >
+			<data name='AnalogPrescaleValue' value='19' />
+			<data name='DigitalSampleRate' value='100000' />
+			<data name='BreakpointCount' value='8' />
+			<data name='CallStackDepthCount' value='8' />
+			<data name='ClockPort' value='1' />
+			<data name='ClockPin' value='6' />
+			<data name='DataPort' value='1' />
+			<data name='DataPin' value='7' />
+			<data name='UseDefaultPins' value='1' />
+			<data name='WrapEnabled' value='1' />
+			<data name='CommsDelayOverridden' value='0' />
+			<data name='CommsDelay' value='9' />
+			<data name='CalculatedCommsDelay' value='9' />
+			<data name='AnalogEB2PrescaleValue' value='2' />
+			<data name='DigitalEB2SampleRate' value='100000' />
+		</ICD>
+		<pins >
+			<digital A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+			<analog A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+		</pins>
+	</ghost>
+	<components >
+		<settings autoimg='0' center='1' unitscale='0' fixedscale='0' fixedx='25' fixedy='25' fixedz='25' headcode='0' />
+		<definition guid='7b5b5fdb-36bc-4d94-937f-8ba38f75de3f' vstate='40' vmin='0' vmaj='1' srcleaf='' visiblename='' description='' category='' category2='' category3='' bIs2dOnly='0' bIs3dOnly='0' catenable='1' author='' manuname='' manucode='' sysinfo='0' keywords='' dynamic='1' scadaCompatible='0' embeddedCompatible='1' showmacros='1' iconpath='' />
+		<component class_type='root' codename='ComponentRoot' panelId='-1' x='0' y='0' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='0' poslock='0' comp2dType='0' >
+			<resources />
+			<properties />
+			<values />
+			<events />
+			<apis />
+			<variables >
+				<variable public='0' >
+					<def class_type='variable' name='D6' type='b1' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Total' type='u8' description='' isconst='0' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='D5' type='b1' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='D4' type='b1' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Pressure' type='u16' description='' isconst='0' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='D3' type='b1' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='D2' type='b1' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='D1' type='b1' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Analog' type='u8' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='false' type='b1' description='' isconst='1' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Distance' type='u16' description='' isconst='0' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Temp' type='u8' description='' isconst='0' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='keypad' type='u8' description='' isconst='0' isHidden='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='LDR' type='u8' description='' isconst='0' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Digit' type='u8' description='' isconst='0' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Humidity' type='u8' description='' isconst='0' isHidden='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='true' type='b1' description='' isconst='1' isHidden='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+			</variables>
+			<macros >
+				<macro >
+					<flowline name='Switch_and_LED' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='loop' title='Loop' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' type='1' exp='D1 = 1' >
+							<flowline >
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='64' exp='D6' usechipref='1' />
+								<command class_type='decision' title='Decision' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='D6 = 1' swap='0' >
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='4' exp='1' usechipref='1' />
+									</flowline>
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='4' exp='0' usechipref='1' />
+									</flowline>
+								</command>
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='32' exp='D5' usechipref='1' />
+								<command class_type='decision' title='Decision' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='D5 = 1' swap='0' >
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='1' usechipref='1' />
+									</flowline>
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='0' usechipref='1' />
+									</flowline>
+								</command>
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='16' exp='D4' usechipref='1' />
+								<command class_type='decision' title='Decision' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='D4 = 1' swap='0' >
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='32' exp='1' usechipref='1' />
+									</flowline>
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='32' exp='0' usechipref='1' />
+									</flowline>
+								</command>
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='8' exp='D3' usechipref='1' />
+								<command class_type='decision' title='Decision' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='D3 = 1' swap='0' >
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='4' exp='1' usechipref='1' />
+									</flowline>
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='4' exp='0' usechipref='1' />
+									</flowline>
+								</command>
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='4' exp='D2' usechipref='1' />
+								<command class_type='decision' title='Decision' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='D2 = 1' swap='0' >
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='1' usechipref='1' />
+									</flowline>
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='0' usechipref='1' />
+									</flowline>
+								</command>
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='2' exp='D1' usechipref='1' />
+								<command class_type='decision' title='Decision' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='D1 = 1' swap='0' >
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='32' exp='1' usechipref='1' />
+									</flowline>
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='32' exp='0' usechipref='1' />
+									</flowline>
+								</command>
+							</flowline>
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='1' type='2' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LED_7Seg1' macro='ClearDigit' />
+						<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='4' exp='0' usechipref='1' />
+						<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='0' usechipref='1' />
+						<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='32' exp='0' usechipref='1' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='DHT22' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Clear' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;Sensor waking up&quot;' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='3' type='2' />
+						<command class_type='loop' title='Loop' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' type='2' exp='2' >
+							<flowline >
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='DHT22' macro='SampleSensor' />
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='DHT22' macro='GetHumidityWhole' >
+									<return exp='Humidity' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='DHT22' macro='GetTempWhole' >
+									<return exp='Temp' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Clear' />
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+									<argument exp='&quot;Temperature = &quot;' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintNumber' >
+									<argument exp='Temp' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+									<argument exp='&quot;C&quot;' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Cursor' >
+									<argument exp='0' />
+									<argument exp='1' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+									<argument exp='&quot;Humidity    = &quot;' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintNumber' >
+									<argument exp='Humidity' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+									<argument exp='&quot;%&quot;' />
+								</command>
+								<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='10' type='2' />
+							</flowline>
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Clear' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Backlight' >
+							<argument exp='0' />
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='seven_seg' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='2' type='2' />
+						<command class_type='calculation' title='Calculation' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' >
+							<exp exp='digit = 0' />
+						</command>
+						<command class_type='loop' title='Loop' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' type='2' exp='10' >
+							<flowline >
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LED_7Seg1' macro='ShowDigit' >
+									<argument exp='Digit' />
+									<argument exp='false' />
+								</command>
+								<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='400' type='1' />
+								<command class_type='calculation' title='Calculation' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' >
+									<exp exp='digit = digit + 1' />
+								</command>
+							</flowline>
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='keypad' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='loop' title='Loop' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' type='1' exp='keypad = 10' >
+							<flowline >
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='keypad_3x4' macro='GetNumber' >
+									<return exp='keypad' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LED_7Seg1' macro='ShowDigit' >
+									<argument exp='keypad' />
+									<argument exp='false' />
+								</command>
+								<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='300' type='1' />
+							</flowline>
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LED_7Seg1' macro='ClearDigit' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='LDR' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='loop' title='Loop' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' type='1' exp='LDR &gt; 250' >
+							<flowline >
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='Potentiometer2' macro='GetByte' >
+									<return exp='LDR' />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='LDR &gt; 250' swap='0' >
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='1' usechipref='1' />
+									</flowline>
+									<flowline >
+										<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='0' usechipref='1' />
+									</flowline>
+								</command>
+								<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='1' type='2' />
+							</flowline>
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='3' type='2' />
+						<command class_type='output' title='Output' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048576' mask='8' exp='0' usechipref='1' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='LCD' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Start' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;PIC Dev. Board&quot;' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='1' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;Version 3&quot;' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='2' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;December 2024&quot;' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='3' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;Peter Halloway&quot;' />
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Analog_pot' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Start' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Clear' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;PCB fully functional&quot;' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' exp='3' type='2' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Clear' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Backlight' >
+							<argument exp='0' />
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Main' description='' statediag='0' >
+						<return name='Return' type='v0' description='' isconst='0' isHidden='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Start' />
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;Operating the slide&quot;' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='1' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;switches will give&quot;' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='2' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+							<argument exp='&quot;the result below&quot;' />
+						</command>
+						<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='Cursor' >
+							<argument exp='0' />
+							<argument exp='3' />
+						</command>
+						<command class_type='loop' title='Loop' cmdcolor='4767473' cmdcolor_sec='11337727' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' type='0' exp='1' >
+							<flowline >
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='16' exp='D4' usechipref='1' />
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='32' exp='D5' usechipref='1' />
+								<command class_type='input' title='Input' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' mode='1' port='1048579' mask='64' exp='D6' usechipref='1' />
+								<command class_type='calculation' title='Calculation' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' >
+									<exp exp='Total = D4 + D5 + D6' />
+								</command>
+								<command class_type='calculation' title='Calculation' cmdcolor='4206456' cmdcolor_sec='10785756' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' />
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='ClearLine' >
+									<argument exp='3' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintString' >
+									<argument exp='&quot;switches on =&quot;' />
+								</command>
+								<command class_type='call' title='Component Macro' cmdcolor='4487093' cmdcolor_sec='11066367' cmdcolor_txt='16777215' cmdgradient='4' cmdopacity='0.64' component='LCDI2C1' macro='PrintNumber' >
+									<argument exp='Total' />
+								</command>
+							</flowline>
+						</command>
+					</flowline>
+				</macro>
+			</macros>
+			<component class_type='ref' guid='44f82374-a417-40d5-bd42-23a177a390d2' vmin='0' vmaj='1' codename='LEDMono1' panelId='0' x='754' y='-480.896' z='0' xsz='36.5099' ysz='38.6716' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Pin' data='$PORTA.5' />
+					<value target='Polarity' data='001' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='A5' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.833333' />
+					<value target='LabelColour' data='65280' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.041667' />
+					<value target='AppDevDetected' data='0' />
+					<value target='Shape' data='000' />
+					<value target='Colour' data='000' />
+					<value target='Style' data='001' />
+					<value target='AutoOffColour' data='1' />
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='10752' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='44f82374-a417-40d5-bd42-23a177a390d2' vmin='0' vmaj='1' codename='LEDMono2' panelId='0' x='754' y='-391.396' z='1' xsz='36.5099' ysz='38.1684' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Pin' data='$PORTA.3' />
+					<value target='Polarity' data='001' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='A3' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.833333' />
+					<value target='LabelColour' data='33023' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.041667' />
+					<value target='AppDevDetected' data='0' />
+					<value target='Shape' data='000' />
+					<value target='Colour' data='003' />
+					<value target='Style' data='001' />
+					<value target='AutoOffColour' data='1' />
+					<value target='OnColour' data='65535' />
+					<value target='OffColour' data='10794' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='44f82374-a417-40d5-bd42-23a177a390d2' vmin='0' vmaj='1' codename='LEDMono3' panelId='0' x='754' y='-311.396' z='2' xsz='36.5099' ysz='38.1684' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Pin' data='$PORTA.2' />
+					<value target='Polarity' data='001' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='A2' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.833333' />
+					<value target='LabelColour' data='255' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.041667' />
+					<value target='AppDevDetected' data='0' />
+					<value target='Shape' data='000' />
+					<value target='Colour' data='001' />
+					<value target='Style' data='001' />
+					<value target='AutoOffColour' data='1' />
+					<value target='OnColour' data='255' />
+					<value target='OffColour' data='42' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='6a9e9265-e261-4604-8dc3-252ea3ccf02c' vmin='4' vmaj='1' codename='LED_7Seg1' panelId='0' x='677.5' y='-234.5' z='3' xsz='25.1763' ysz='25.3687' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='display_type' data='001' />
+					<value target='ShowSegLabels' data='1' />
+					<value target='UseCommonPin' data='1' />
+					<value target='common_type' data='000' />
+					<value target='pin0' data='$PORTC.1' />
+					<value target='pin1' data='$PORTC.0' />
+					<value target='pin2' data='$PORTA.1' />
+					<value target='pin3' data='$PORTC.7' />
+					<value target='pin4' data='$PORTC.6' />
+					<value target='pin5' data='$PORTC.2' />
+					<value target='pin6' data='$PORTC.5' />
+					<value target='pin7' data='$PORTB.1' />
+					<value target='common_pin' data='$PORTA.4' />
+					<value target='FGColour' data='255' />
+					<value target='BGColour' data='5921370' />
+					<value target='LabelColour' data='16777215' />
+					<value target='LEDAutoOffColour' data='63' />
+					<value target='AppDevDetected' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='1df1ea9a-6983-4014-aba5-f5144ea4e053' vmin='0' vmaj='15' codename='SwitchSlide1' panelId='0' x='98' y='-93.2004' z='4' xsz='25.1282' ysz='25.5507' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='AppDevDetected' data='0' />
+					<value target='SimulationOnly' data='0' />
+					<value target='Pin' data='$PORTD.6' />
+					<value target='Polarity' data='000' />
+					<value target='debounce' data='5' />
+					<value target='Latching' data='1' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='D6' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.800000' />
+					<value target='LabelColour' data='16711680' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.000000' />
+					<value target='Style' data='000' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='GdiSwitch1::sLabelOn' data='On' />
+					<value target='GdiSwitch1::sLabelOff' data='Off' />
+					<value target='FontType' data='Calibri' />
+					<value target='GdiSwitch1::dScale' data='0.65' />
+					<value target='GdiText2::dScale' data='0.65' />
+					<value target='GdiText1::dScale' data='0.65' />
+					<value target='GdiSwitch1::brOutline' data='71776119061217280' />
+					<value target='GdiSwitch1::brOuterFillOn' data='251262225375821824' />
+					<value target='GdiSwitch1::brFill' data='251262225375821824' />
+					<value target='GdiSwitch1::brOutlineThumb' data='71917408452870144' />
+					<value target='GdiSwitch1::brFillThumb' data='288090190566653952' />
+					<value target='GdiSwitch1::brFillOn' data='648292728253186048' />
+					<value target='GdiSwitch1::brLabelOn' data='0' />
+					<value target='GdiSwitch1::brFillOff' data='648237171995574272' />
+					<value target='GdiSwitch1::brLabelOff' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='1df1ea9a-6983-4014-aba5-f5144ea4e053' vmin='0' vmaj='15' codename='SwitchSlide2' panelId='0' x='99' y='-163.233' z='5' xsz='25.1282' ysz='25.1101' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='AppDevDetected' data='0' />
+					<value target='SimulationOnly' data='0' />
+					<value target='Pin' data='$PORTD.5' />
+					<value target='Polarity' data='000' />
+					<value target='debounce' data='5' />
+					<value target='Latching' data='1' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='D5' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.800000' />
+					<value target='LabelColour' data='16711680' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.000000' />
+					<value target='Style' data='000' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='GdiSwitch1::sLabelOn' data='On' />
+					<value target='GdiSwitch1::sLabelOff' data='Off' />
+					<value target='FontType' data='Calibri' />
+					<value target='GdiSwitch1::dScale' data='0.65' />
+					<value target='GdiText2::dScale' data='0.65' />
+					<value target='GdiText1::dScale' data='0.65' />
+					<value target='GdiSwitch1::brOutline' data='71776119061217280' />
+					<value target='GdiSwitch1::brOuterFillOn' data='251262225375821824' />
+					<value target='GdiSwitch1::brFill' data='251262225375821824' />
+					<value target='GdiSwitch1::brOutlineThumb' data='71917408452870144' />
+					<value target='GdiSwitch1::brFillThumb' data='288090190566653952' />
+					<value target='GdiSwitch1::brFillOn' data='648292728253186048' />
+					<value target='GdiSwitch1::brLabelOn' data='0' />
+					<value target='GdiSwitch1::brFillOff' data='648237171995574272' />
+					<value target='GdiSwitch1::brLabelOff' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='1df1ea9a-6983-4014-aba5-f5144ea4e053' vmin='0' vmaj='15' codename='SwitchSlide3' panelId='0' x='99' y='-233.233' z='6' xsz='25.1282' ysz='25.1101' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='AppDevDetected' data='0' />
+					<value target='SimulationOnly' data='0' />
+					<value target='Pin' data='$PORTD.4' />
+					<value target='Polarity' data='000' />
+					<value target='debounce' data='5' />
+					<value target='Latching' data='1' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='D4' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.800000' />
+					<value target='LabelColour' data='16711680' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.000000' />
+					<value target='Style' data='000' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='GdiSwitch1::sLabelOn' data='On' />
+					<value target='GdiSwitch1::sLabelOff' data='Off' />
+					<value target='FontType' data='Calibri' />
+					<value target='GdiSwitch1::dScale' data='0.65' />
+					<value target='GdiText2::dScale' data='0.65' />
+					<value target='GdiText1::dScale' data='0.65' />
+					<value target='GdiSwitch1::brOutline' data='71776119061217280' />
+					<value target='GdiSwitch1::brOuterFillOn' data='251262225375821824' />
+					<value target='GdiSwitch1::brFill' data='251262225375821824' />
+					<value target='GdiSwitch1::brOutlineThumb' data='71917408452870144' />
+					<value target='GdiSwitch1::brFillThumb' data='288090190566653952' />
+					<value target='GdiSwitch1::brFillOn' data='648292728253186048' />
+					<value target='GdiSwitch1::brLabelOn' data='0' />
+					<value target='GdiSwitch1::brFillOff' data='648237171995574272' />
+					<value target='GdiSwitch1::brLabelOff' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='3cf64267-8c56-47b0-84a1-a933a77716bc' vmin='0' vmaj='1' codename='LCDI2C1' panelId='0' x='585' y='-105' z='7' xsz='30.1099' ysz='30.3567' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='1' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='cal_i2c1::CHANNEL' data='000' />
+					<value target='SlaveAddress' data='39' />
+					<value target='cal_i2c1::BAUD_LIST' data='001' />
+					<value target='cal_i2c1::BAUD' data='100000' />
+					<value target='cal_i2c1::SDA' data='$PORTC.4' />
+					<value target='cal_i2c1::SDAPins' data='000' />
+					<value target='cal_i2c1::SCL' data='$PORTC.3' />
+					<value target='cal_i2c1::SCLPins' data='001' />
+					<value target='cal_i2c1::StopDel' data='0' />
+					<value target='Rows' data='004' />
+					<value target='Columns' data='020' />
+					<value target='RemapCharacters' data='0' />
+					<value target='DelayTiming' data='100' />
+					<value target='BackgroundColor' data='16711680' />
+					<value target='LineColor' data='0' />
+					<value target='TextColor' data='0' />
+					<value target='Font' data='Fixedsys' />
+					<value target='CursorPosX' data='0' />
+					<value target='CursorPosY' data='3' />
+					<value target='cal_i2c1::ConsoleData' data='0' />
+					<value target='cal_i2c1::ScopeTraces' data='0' />
+					<value target='cal_i2c1::Injector' data='000' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='c5d9ffa3-5a7d-4fb2-b9ba-ec855ad7b25c' vmin='0' vmaj='9' codename='HC_SR04_Ultrasonic1' panelId='0' x='107' y='-582' z='8' xsz='26.7399' ysz='26.738' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='1' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Type' data='010' />
+					<value target='TimingSource' data='0' />
+					<value target='OPP' data='$PORTD.0' />
+					<value target='ECHO' data='$PORTA.5' />
+					<value target='Timer1::RolloverTime' data='0.013107' />
+					<value target='DeviceFamily' data='PIC' />
+					<value target='ClockSpeed' data='20000000' />
+					<value target='Timer1::Timer' data='000' />
+					<value target='Timer1::Prescaler' data='000' />
+					<value target='Timer1::Postscaler' data='0' />
+					<value target='Timer1::BitDepth' data='16' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='11ca2f38-de81-4812-9338-4b5a7a89a658' vmin='0' vmaj='1' codename='Potentiometer1' panelId='0' x='227' y='-186.5' z='9' xsz='25' ysz='25.036' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='adc_base1::channel' data='0' />
+					<value target='adc_base1::vrefvol' data='500' />
+					<value target='adc_base1::vrefop' data='000' />
+					<value target='adc_base1::convspd' data='049' />
+					<value target='adc_base1::actime' data='40' />
+					<value target='adc_base1::bits' data='10' />
+					<value target='VrefForCalculations' data='' />
+					<value target='BitDepth' data='10' />
+					<value target='SetValue' data='3.540479' />
+					<value target='RetainValue' data='1' />
+					<value target='ModifiedConnection' data='An 0' />
+					<value target='ComponentLabel' data='001' />
+					<value target='LabelColour' data='65350' />
+					<value target='GdiText2::sText' data='Analogue Input' />
+					<value target='ConnectionLabels' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='Style' data='0' />
+					<value target='Gauge1::brFill' data='288230376147764163' />
+					<value target='Gauge1::colFrameOutline' data='9868950' />
+					<value target='Gauge1::brFrameFill' data='261490253360251843' />
+					<value target='Gauge1::colPointerOutline' data='9868950' />
+					<value target='Gauge1::brPointerFill' data='261490253360251843' />
+					<value target='Gauge1::colText' data='65350' />
+					<value target='Gauge1::colTickMarkOutline' data='65350' />
+					<value target='Gauge1::brTickMarkFill' data='12829635' />
+					<value target='Gauge1::colCapOutline' data='12829635' />
+					<value target='Gauge1::brCapFill' data='261490253360251843' />
+					<value target='Gauge1::sMainImage' data='' />
+					<value target='Gauge1::sCapImage' data='' />
+					<value target='GdiGauge1::nPointerKnob' data='  2' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='UpperBoundValue' data='5.000050' />
+					<value target='adc_base1::ScopeTraces' data='0' />
+					<value target='StoredColourStyle' data='0' />
+					<value target='FlowcodeType' data='0' />
+					<value target='Enabled' data='1' />
+					<value target='Product' data='PIC' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='e2698f3e-1168-4f25-9c50-24a74ea7e34a' vmin='0' vmaj='15' codename='Switch_Push_Button1' panelId='0' x='106' y='-385.233' z='10' xsz='25.1282' ysz='25.1101' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='AppDevDetected' data='0' />
+					<value target='SimulationOnly' data='0' />
+					<value target='Pin' data='$PORTD.3' />
+					<value target='Polarity' data='000' />
+					<value target='debounce' data='5' />
+					<value target='Latching' data='0' />
+					<value target='LabelColour' data='255' />
+					<value target='ShowCompLabel' data='1' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='D3' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.800000' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.000000' />
+					<value target='Style' data='000' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='GdiSwitch1::sLabelOn' data='On' />
+					<value target='GdiSwitch1::sLabelOff' data='Off' />
+					<value target='FontType' data='Calibri' />
+					<value target='GdiSwitch1::dScale' data='0.65' />
+					<value target='GdiText2::dScale' data='0.65' />
+					<value target='GdiText1::dScale' data='0.65' />
+					<value target='GdiSwitch1::brOutline' data='71776119061217280' />
+					<value target='GdiSwitch1::brOuterFillOn' data='251262225375821824' />
+					<value target='GdiSwitch1::brFill' data='251262225375821824' />
+					<value target='GdiSwitch1::brOutlineThumb' data='71917408452870144' />
+					<value target='GdiSwitch1::brFillThumb' data='288090190566653952' />
+					<value target='GdiSwitch1::brFillOn' data='648292728253186048' />
+					<value target='GdiSwitch1::brLabelOn' data='0' />
+					<value target='GdiSwitch1::brFillOff' data='648237171995574272' />
+					<value target='GdiSwitch1::brLabelOff' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='e2698f3e-1168-4f25-9c50-24a74ea7e34a' vmin='0' vmaj='15' codename='Switch_Push_Button2' panelId='0' x='199' y='-387.2' z='11' xsz='25.1282' ysz='25.5507' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='AppDevDetected' data='0' />
+					<value target='SimulationOnly' data='0' />
+					<value target='Pin' data='$PORTD.2' />
+					<value target='Polarity' data='000' />
+					<value target='debounce' data='5' />
+					<value target='Latching' data='0' />
+					<value target='LabelColour' data='255' />
+					<value target='ShowCompLabel' data='1' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='D2' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.800000' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.000000' />
+					<value target='Style' data='000' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='GdiSwitch1::sLabelOn' data='On' />
+					<value target='GdiSwitch1::sLabelOff' data='Off' />
+					<value target='FontType' data='Calibri' />
+					<value target='GdiSwitch1::dScale' data='0.65' />
+					<value target='GdiText2::dScale' data='0.65' />
+					<value target='GdiText1::dScale' data='0.65' />
+					<value target='GdiSwitch1::brOutline' data='71776119061217280' />
+					<value target='GdiSwitch1::brOuterFillOn' data='251262225375821824' />
+					<value target='GdiSwitch1::brFill' data='251262225375821824' />
+					<value target='GdiSwitch1::brOutlineThumb' data='71917408452870144' />
+					<value target='GdiSwitch1::brFillThumb' data='288090190566653952' />
+					<value target='GdiSwitch1::brFillOn' data='648292728253186048' />
+					<value target='GdiSwitch1::brLabelOn' data='0' />
+					<value target='GdiSwitch1::brFillOff' data='648237171995574272' />
+					<value target='GdiSwitch1::brLabelOff' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='e2698f3e-1168-4f25-9c50-24a74ea7e34a' vmin='0' vmaj='15' codename='Switch_Push_Button3' panelId='0' x='302' y='-386.2' z='12' xsz='25.1282' ysz='25.5507' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='AppDevDetected' data='0' />
+					<value target='SimulationOnly' data='0' />
+					<value target='Pin' data='$PORTD.1' />
+					<value target='Polarity' data='000' />
+					<value target='debounce' data='5' />
+					<value target='Latching' data='0' />
+					<value target='LabelColour' data='255' />
+					<value target='ShowCompLabel' data='1' />
+					<value target='ComponentLabel' data='001' />
+					<value target='GdiText2::sText' data='D1' />
+					<value target='ComponentLabelPosition' data='000' />
+					<value target='ComponentLabelXPostion' data='0' />
+					<value target='ComponentLabelYPostion' data='0.800000' />
+					<value target='ShowConnectionLabel' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='PinLabelPosition' data='001' />
+					<value target='PinLabelXPostion' data='0' />
+					<value target='PinLabelYPostion' data='-1.000000' />
+					<value target='Style' data='000' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='GdiSwitch1::sLabelOn' data='On' />
+					<value target='GdiSwitch1::sLabelOff' data='Off' />
+					<value target='FontType' data='Calibri' />
+					<value target='GdiSwitch1::dScale' data='0.65' />
+					<value target='GdiText2::dScale' data='0.65' />
+					<value target='GdiText1::dScale' data='0.65' />
+					<value target='GdiSwitch1::brOutline' data='71776119061217280' />
+					<value target='GdiSwitch1::brOuterFillOn' data='251262225375821824' />
+					<value target='GdiSwitch1::brFill' data='251262225375821824' />
+					<value target='GdiSwitch1::brOutlineThumb' data='71917408452870144' />
+					<value target='GdiSwitch1::brFillThumb' data='288090190566653952' />
+					<value target='GdiSwitch1::brFillOn' data='648292728253186048' />
+					<value target='GdiSwitch1::brLabelOn' data='0' />
+					<value target='GdiSwitch1::brFillOff' data='648237171995574272' />
+					<value target='GdiSwitch1::brLabelOff' data='0' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='95a1525b-7e03-4836-8c09-59bf174f603b' vmin='7' vmaj='1' codename='DHT22' panelId='0' x='266.5' y='-557' z='13' xsz='20.1208' ysz='20.4991' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='dpin' data='$PORTE.2' />
+					<value target='csum' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='b07090da-50a4-41ed-97d8-99016c092a14' vmin='0' vmaj='1' codename='keypad_3x4' panelId='0' x='495' y='-399.5' z='14' xsz='36.1719' ysz='33.5673' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='port' data='005' />
+					<value target='pin_col1' data='$PORTB.4' />
+					<value target='pin_col2' data='$PORTB.5' />
+					<value target='pin_col3' data='$PORTD.7' />
+					<value target='pin_row1' data='$PORTB.0' />
+					<value target='pin_row2' data='$PORTB.1' />
+					<value target='pin_row3' data='$PORTB.2' />
+					<value target='pin_row4' data='$PORTB.3' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='11ca2f38-de81-4812-9338-4b5a7a89a658' vmin='0' vmaj='1' codename='Potentiometer2' panelId='0' x='270.5' y='-742' z='15' xsz='20.6169' ysz='17.366' zsz='25' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='2' poslock='0' comp2dType='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='adc_base1::channel' data='6' />
+					<value target='adc_base1::vrefvol' data='500' />
+					<value target='adc_base1::vrefop' data='000' />
+					<value target='adc_base1::convspd' data='000' />
+					<value target='adc_base1::actime' data='40' />
+					<value target='adc_base1::bits' data='10' />
+					<value target='VrefForCalculations' data='' />
+					<value target='BitDepth' data='10' />
+					<value target='SetValue' data='5.000050' />
+					<value target='RetainValue' data='1' />
+					<value target='ModifiedConnection' data='An 6' />
+					<value target='ComponentLabel' data='001' />
+					<value target='LabelColour' data='4325631' />
+					<value target='GdiText2::sText' data='LDR' />
+					<value target='ConnectionLabels' data='0' />
+					<value target='ShowPinValue' data='0' />
+					<value target='Style' data='0' />
+					<value target='Gauge1::brFill' data='288230376147764163' />
+					<value target='Gauge1::colFrameOutline' data='9868950' />
+					<value target='Gauge1::brFrameFill' data='261490253360251843' />
+					<value target='Gauge1::colPointerOutline' data='9868950' />
+					<value target='Gauge1::brPointerFill' data='261490253360251843' />
+					<value target='Gauge1::colText' data='4325631' />
+					<value target='Gauge1::colTickMarkOutline' data='4325631' />
+					<value target='Gauge1::brTickMarkFill' data='12829635' />
+					<value target='Gauge1::colCapOutline' data='12829635' />
+					<value target='Gauge1::brCapFill' data='261490253360251843' />
+					<value target='Gauge1::sMainImage' data='' />
+					<value target='Gauge1::sCapImage' data='' />
+					<value target='GdiGauge1::nPointerKnob' data='  2' />
+					<value target='GdiSwitch1::nType' data='  2' />
+					<value target='UpperBoundValue' data='5.000050' />
+					<value target='adc_base1::ScopeTraces' data='0' />
+					<value target='StoredColourStyle' data='0' />
+					<value target='FlowcodeType' data='0' />
+					<value target='Enabled' data='1' />
+					<value target='Product' data='PIC' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+		</component>
+	</components>
+	<scadaresourcelookup />
+	<keymap />
+	<panel2d shadows='0' lighting='2' brightness='0' >
+		<background rgb='7292207' img='' style='0' />
+		<camera xe='0' ye='0' ze='1095.95' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<viewport dx='356' dy='849' zoom='39.3047' fix_topleft='0' />
+		<page x='1000' y='1000' show='0' rgb='7360576' />
+		<winpos ID='7005' RectRecentFloat='524,288,1174,738' RectRecentDocked='0,0,356,872' RecentFrameAlignment='16384' RecentRowIndex='0' IsFloating='0' MRUWidth='32767' PinState='0' IsMaximized='0' IsVisible='0' />
+	</panel2d>
+	<panel3d shadows='0' lighting='2' brightness='0' perspective='1' >
+		<background rgb='8409120' img='' style='0' />
+		<table rgb='7360576' img='' style='0' size='0' />
+		<camera xe='0' ye='0' ze='781.66' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey0 xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey1 xe='-3.67394e-14' ye='0' ze='-300' xt='0' yt='0' zt='0' xquat='0' yquat='1' zquat='0' wquat='6.12323e-17' />
+		<camerakey2 xe='0' ye='-300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.707107' yquat='0' zquat='0' wquat='0.707107' />
+		<camerakey3 xe='-3.67394e-14' ye='300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-4.32978e-17' yquat='0.707107' zquat='0.707107' wquat='4.32978e-17' />
+		<camerakey4 xe='-300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='0.5' zquat='0.5' wquat='0.5' />
+		<camerakey5 xe='300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='-0.5' zquat='-0.5' wquat='0.5' />
+		<camerakey6 xe='-173.205' ye='-173.205' ze='173.205' xt='0' yt='0' zt='0' xquat='-0.424708' yquat='0.17592' zquat='0.339851' wquat='0.820473' />
+		<winpos ID='7004' RectRecentFloat='556,304,1206,754' RectRecentDocked='0,0,356,450' RecentFrameAlignment='16384' RecentRowIndex='0' IsFloating='0' MRUWidth='32767' PinState='0' IsMaximized='0' IsVisible='0' />
+	</panel3d>
+	<panels2d count='1' >
+		<panel2d_0 id='0' name='2D Panel' >
+			<winpos ID='1171' RectRecentFloat='2598,206,3840,1080' RectRecentDocked='1011,141,1920,707' RecentFrameAlignment='16384' RecentRowIndex='0' IsFloating='0' MRUWidth='32767' PinState='0' IsMaximized='0' IsVisible='1' />
+			<background fill='288230376149680127' showgrid='0' gridstyle='0' gridsize='10' gridbrush='71776119075691740' snaptogrid='1' />
+		</panel2d_0>
+	</panels2d>
+	<layout >
+		<view type='0' name='Main' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAYAAAAmAIAADECAAA' zoom='100' scrollx='0' scrolly='521' flags='0' />
+	</layout>
+</document>
+</root>
